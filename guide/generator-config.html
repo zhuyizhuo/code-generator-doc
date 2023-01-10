@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>完整配置 | code-generator</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/code-generator-doc/favicon.ico">
+    <meta name="description" content="轻量级可扩展代码生成器">
+    
+    <link rel="preload" href="/code-generator-doc/assets/css/0.styles.574c41e8.css" as="style"><link rel="preload" href="/code-generator-doc/assets/js/app.991f2967.js" as="script"><link rel="preload" href="/code-generator-doc/assets/js/2.5fd1c3e4.js" as="script"><link rel="preload" href="/code-generator-doc/assets/js/12.eba8c31f.js" as="script"><link rel="prefetch" href="/code-generator-doc/assets/js/10.f9fa4a9e.js"><link rel="prefetch" href="/code-generator-doc/assets/js/11.c091f80a.js"><link rel="prefetch" href="/code-generator-doc/assets/js/13.180dfe94.js"><link rel="prefetch" href="/code-generator-doc/assets/js/14.bcd5bdf4.js"><link rel="prefetch" href="/code-generator-doc/assets/js/3.3ddbf06d.js"><link rel="prefetch" href="/code-generator-doc/assets/js/4.cd6dc281.js"><link rel="prefetch" href="/code-generator-doc/assets/js/5.a9ca0a1d.js"><link rel="prefetch" href="/code-generator-doc/assets/js/6.a1c6a751.js"><link rel="prefetch" href="/code-generator-doc/assets/js/7.a100e6ff.js"><link rel="prefetch" href="/code-generator-doc/assets/js/8.5f5975dc.js"><link rel="prefetch" href="/code-generator-doc/assets/js/9.9080a8d0.js">
+    <link rel="stylesheet" href="/code-generator-doc/assets/css/0.styles.574c41e8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/code-generator-doc/" class="home-link router-link-active"><!----> <span class="site-name">code-generator</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/code-generator-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/code-generator-doc/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="https://github.com/zhuyizhuo/code-generator" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/code-generator-doc/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/code-generator-doc/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="https://github.com/zhuyizhuo/code-generator" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/code-generator-doc/guide/" aria-current="page" class="sidebar-link">简介</a></li><li><a href="/code-generator-doc/guide/quickstart.html" class="sidebar-link">快速开始</a></li><li><a href="/code-generator-doc/guide/extension.html" class="sidebar-link">扩展</a></li><li><a href="/code-generator-doc/guide/faq.html" class="sidebar-link">常见问题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/code-generator-doc/guide/required-configuration.html" class="sidebar-link">必选配置</a></li><li><a href="/code-generator-doc/guide/generator-config.html" aria-current="page" class="active sidebar-link">完整配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/code-generator-doc/guide/generator-config.html#数据库配置-以-mysql-为例" class="sidebar-link">数据库配置 以 MYSQL 为例</a></li><li class="sidebar-sub-header"><a href="/code-generator-doc/guide/generator-config.html#建议配置" class="sidebar-link">建议配置</a></li><li class="sidebar-sub-header"><a href="/code-generator-doc/guide/generator-config.html#其他默认配置" class="sidebar-link">其他默认配置</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>代码模板</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/code-generator-doc/guide/freemarker-template.html" class="sidebar-link">代码模板</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="完整配置"><a href="#完整配置" class="header-anchor">#</a> 完整配置</h1> <h2 id="数据库配置-以-mysql-为例"><a href="#数据库配置-以-mysql-为例" class="header-anchor">#</a> 数据库配置 以 MYSQL 为例</h2> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token key attr-name">db.type</span><span class="token punctuation">=</span><span class="token value attr-value">MYSQL</span>
+<span class="token key attr-name">db.driver</span><span class="token punctuation">=</span><span class="token value attr-value">com.mysql.cj.jdbc.Driver</span>
+<span class="token key attr-name">db.url</span><span class="token punctuation">=</span><span class="token value attr-value">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;serverTimezone=Asia/Shanghai</span>
+<span class="token key attr-name">db.table-schema</span><span class="token punctuation">=</span><span class="token value attr-value">test</span>
+<span class="token key attr-name">db.username</span><span class="token punctuation">=</span><span class="token value attr-value">root</span>
+<span class="token key attr-name">db.password</span><span class="token punctuation">=</span><span class="token value attr-value">root</span>
+</code></pre></div><h2 id="建议配置"><a href="#建议配置" class="header-anchor">#</a> 建议配置</h2> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token comment"># 指定生成的表 多张表用英文逗号隔开,大小写不敏感,缺省配置为 db.table-schema 下的全部表</span>
+<span class="token key attr-name">generate.table-names</span><span class="token punctuation">=</span><span class="token value attr-value">table1,table2</span>
+<span class="token comment"># java 类生成的公共包路径, 无缺省值 示例：</span>
+<span class="token key attr-name">generate.base.package</span><span class="token punctuation">=</span><span class="token value attr-value">com.github</span>
+</code></pre></div><h2 id="其他默认配置"><a href="#其他默认配置" class="header-anchor">#</a> 其他默认配置</h2> <div class="language-properties extra-class"><pre class="language-properties"><code><span class="token comment">############### 公共配置 start ############</span>
+<span class="token comment"># 是否生成各模块完整包目录。默认为 true。如过配置为 false，则仅生成包名最后一层目录</span>
+<span class="token comment"># 和 generate.base.out-put-path 配置项一起使用 将文件生成至指定文件夹 可有效减少目录层级</span>
+<span class="token key attr-name">generate.java.base.package.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment"># 生成文件输出公共路径,缺省配置为 [当前项目路径]</span>
+<span class="token key attr-name">generate.base.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{user.dir}</span>
+<span class="token comment"># java 类生成的公共包路径,无缺省值</span>
+<span class="token key attr-name">generate.base.package</span><span class="token punctuation">=</span>
+<span class="token comment"># java 类生成的公共目录,缺省配置为 /src/main/java</span>
+<span class="token key attr-name">generate.base.java-path</span><span class="token punctuation">=</span><span class="token value attr-value">/src/main/java/</span>
+<span class="token comment">############### 公共配置 end ############</span>
+
+<span class="token comment">############### 类配置 start ############</span>
+<span class="token comment"># CONTROLLER 包名 如下配置 CONTROLLER 所在包路径为 service</span>
+<span class="token key attr-name">generate.java.module.controller.package</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.package}.controller</span>
+<span class="token comment"># CONTROLLER 名称 默认配置 {0}Controller，{0} 表示表名转为驼峰命名</span>
+<span class="token key attr-name">generate.java.module.controller.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}Controller</span>
+<span class="token comment"># CONTROLLER 输出路径 默认为 /src/main/java</span>
+<span class="token key attr-name">generate.java.module.controller.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.java-path}</span>
+
+<span class="token comment"># 视图对象包名 如下配置 实体类所在包路径为 vo</span>
+<span class="token key attr-name">generate.java.module.vo.package</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.package}.vo</span>
+<span class="token comment"># 视图对象名称 默认配置 {0} 即表名转为驼峰命名</span>
+<span class="token key attr-name">generate.java.module.vo.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}</span>
+<span class="token comment"># 视图对象类输出路径 默认为 /src/main/java</span>
+<span class="token key attr-name">generate.java.module.vo.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.java-path}</span>
+
+<span class="token comment"># SERVICE 包名 如下配置 SERVICE 所在包路径为 service</span>
+<span class="token key attr-name">generate.java.module.service.package</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.package}.service</span>
+<span class="token comment"># SERVICE 名称 默认配置 {0}Service {0} 表示表名转为驼峰命名</span>
+<span class="token key attr-name">generate.java.module.service.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}Service</span>
+<span class="token comment"># SERVICE 输出路径 默认为 /src/main/java</span>
+<span class="token key attr-name">generate.java.module.service.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.java-path}</span>
+
+<span class="token comment"># ServiceImpl 包名 如下配置 ServiceImpl 所在包路径为 service.impl</span>
+<span class="token key attr-name">generate.java.module.service.impl.package</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.package}.service.impl</span>
+<span class="token comment"># ServiceImpl 名称 默认配置 {0}ServiceImpl {0} 表示表名转为驼峰命名</span>
+<span class="token key attr-name">generate.java.module.service.impl.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}ServiceImpl</span>
+<span class="token comment"># ServiceImpl 输出路径 默认为 /src/main/java</span>
+<span class="token key attr-name">generate.java.module.service.impl.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.java-path}</span>
+
+<span class="token comment"># MAPPER 包名 如下配置 MAPPER 所在包路径为 mapper</span>
+<span class="token key attr-name">generate.java.module.mapper.package</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.package}.mapper</span>
+<span class="token comment"># MAPPER 名称 默认配置 {0}Mapper {0} 表示表名转为驼峰命名</span>
+<span class="token key attr-name">generate.java.module.mapper.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}Mapper</span>
+<span class="token comment"># MAPPER 输出路径 默认为 /src/main/java</span>
+<span class="token key attr-name">generate.java.module.mapper.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.java-path}</span>
+
+<span class="token comment"># 实体类包名 如下配置 实体类所在包路径为 model</span>
+<span class="token key attr-name">generate.java.module.model.package</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.package}.model</span>
+<span class="token comment"># 实体名称 默认配置 {0} 即表名转为驼峰命名</span>
+<span class="token key attr-name">generate.java.module.model.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}</span>
+<span class="token comment"># 实体类输出路径 默认为 /src/main/java</span>
+<span class="token key attr-name">generate.java.module.model.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">#{generate.base.java-path}</span>
+<span class="token comment">############### 类配置 end ############</span>
+
+<span class="token comment">############## 注释 start ##############</span>
+<span class="token comment"># 作者 默认  @author ： TODO</span>
+<span class="token key attr-name">generate.java.comment.author</span><span class="token punctuation">=</span><span class="token value attr-value">TODO</span>
+<span class="token comment"># 创建版本号 默认 @since : 1.0</span>
+<span class="token key attr-name">generate.java.comment.since-version</span><span class="token punctuation">=</span><span class="token value attr-value">1.0</span>
+<span class="token comment"># 当前版本号 默认 @version : 1.0</span>
+<span class="token key attr-name">generate.java.comment.current-version</span><span class="token punctuation">=</span><span class="token value attr-value">1.0</span>
+<span class="token comment">############## 注释 end ################</span>
+
+<span class="token comment">############### 方法配置 start ###############</span>
+<span class="token comment"># 新增数据，默认生成该方法  配置为 false 则不生成</span>
+<span class="token key attr-name">generate.java.method.insert.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token comment"># 方法描述</span>
+<span class="token key attr-name">generate.java.method.insert.comment</span><span class="token punctuation">=</span><span class="token value attr-value">新增数据</span>
+<span class="token comment"># 方法名格式化</span>
+<span class="token key attr-name">generate.java.method.insert.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">insert{0}</span>
+
+<span class="token comment"># 批量新增数据，默认生成该方法  配置为 false 则不生成</span>
+<span class="token key attr-name">generate.java.method.batch-insert.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.batch-insert.comment</span><span class="token punctuation">=</span><span class="token value attr-value">批量插入数据</span>
+<span class="token key attr-name">generate.java.method.batch-insert.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">batchInsert{0}</span>
+
+<span class="token comment"># 根据传入参数删除数据，默认生成该方法  配置为 false 则不生成</span>
+<span class="token key attr-name">generate.java.method.delete-by-where.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.delete-by-where.comment</span><span class="token punctuation">=</span><span class="token value attr-value">根据传入参数删除数据</span>
+<span class="token key attr-name">generate.java.method.delete-by-where.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">delete{0}ByWhere</span>
+
+<span class="token comment"># 根据主键删除数据，默认生成该方法 配置为 false 则不生成; 如果表无主键 则不生成此方法</span>
+<span class="token key attr-name">generate.java.method.delete-by-primary-key.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.delete-by-primary-key.comment</span><span class="token punctuation">=</span><span class="token value attr-value">根据主键删除数据</span>
+<span class="token key attr-name">generate.java.method.delete-by-primary-key.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">delete{0}ByPrimaryKey</span>
+
+<span class="token comment"># 根据主键更新数据，默认生成该方法  配置为 false 则不生成; 如果表无主键 则不生成此方法</span>
+<span class="token key attr-name">generate.java.method.update-by-primary-key.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.update-by-primary-key.comment</span><span class="token punctuation">=</span><span class="token value attr-value">根据主键更新数据</span>
+<span class="token key attr-name">generate.java.method.update-by-primary-key.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">update{0}ByPrimaryKey</span>
+
+<span class="token comment"># 根据传入参数查询数据列表，默认生成该方法  配置为 false 则不生成</span>
+<span class="token key attr-name">generate.java.method.query-by-where.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.query-by-where.comment</span><span class="token punctuation">=</span><span class="token value attr-value">根据传入参数查询数据列表</span>
+<span class="token key attr-name">generate.java.method.query-by-where.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">query{0}ListByWhere</span>
+
+<span class="token comment"># 根据主键查询数据，默认生成该方法  配置为 false 则不生成; 如果表无主键 则不生成此方法</span>
+<span class="token key attr-name">generate.java.method.query-by-primary-key.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.query-by-primary-key.comment</span><span class="token punctuation">=</span><span class="token value attr-value">根据主键查询数据</span>
+<span class="token key attr-name">generate.java.method.query-by-primary-key.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">query{0}ByPrimaryKey</span>
+
+<span class="token comment"># 统计符合条件的数据数量，默认生成该方法  配置为 false 则不生成</span>
+<span class="token key attr-name">generate.java.method.count-by-where.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">generate.java.method.count-by-where.comment</span><span class="token punctuation">=</span><span class="token value attr-value">统计符合条件的数据数量</span>
+<span class="token key attr-name">generate.java.method.count-by-where.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">count{0}ByWhere</span>
+<span class="token comment">############### 方法配置 end ###############</span>
+
+<span class="token comment">##################### XML 配置 start ####################</span>
+<span class="token comment"># XML 名称 默认 驼峰命名</span>
+<span class="token key attr-name">generate.resources.xml.name-format</span><span class="token punctuation">=</span><span class="token value attr-value">{0}</span>
+<span class="token comment"># 生成资源文件输出路径,缺省配置为 /src/main/resources/xml, 路径请使用/或\\分隔</span>
+<span class="token key attr-name">generate.resources.xml.out-put-path</span><span class="token punctuation">=</span><span class="token value attr-value">/src/main/resources/xml</span>
+<span class="token comment"># mybatis xml 的 parameterType 别名是否启用</span>
+<span class="token key attr-name">generate.resources.xml.mybatis.parameter-type.aliases.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token comment">##################### XML 配置 end ####################</span>
+
+<span class="token comment">##################### 其他配置 start ####################</span>
+<span class="token comment"># 数据库表名分隔符 例如表名为 SHOP_USER 则分隔符为 _ 缺省配置为 _</span>
+<span class="token key attr-name">generate.table.separator</span><span class="token punctuation">=</span><span class="token value attr-value">_</span>
+<span class="token comment"># 数据库字段分隔符 例如字段为 ORDER_NO 则分隔符为 _ 缺省配置为 _</span>
+<span class="token key attr-name">generate.table.field.separator</span><span class="token punctuation">=</span><span class="token value attr-value">_</span>
+
+<span class="token comment"># 日志级别 INFO DEBUG  默认 INFO</span>
+<span class="token key attr-name">generate.log.level</span><span class="token punctuation">=</span><span class="token value attr-value">INFO</span>
+<span class="token comment">##################### 其他配置 end ####################</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/code-generator-doc/guide/required-configuration.html" class="prev">
+        必选配置
+      </a></span> <span class="next"><a href="/code-generator-doc/guide/freemarker-template.html">
+        代码模板
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/code-generator-doc/assets/js/app.991f2967.js" defer></script><script src="/code-generator-doc/assets/js/2.5fd1c3e4.js" defer></script><script src="/code-generator-doc/assets/js/12.eba8c31f.js" defer></script>
+  </body>
+</html>
